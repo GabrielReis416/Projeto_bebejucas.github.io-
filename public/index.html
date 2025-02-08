@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebejucas | Moda Infantil</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--Navegação-->
+    <header>
+        <div class="container">
+            <img class="logo-usuario" id="mostrarDadosUsuario" src="img/usuario.png">
+            <div class="logo">
+                <a href="index.html"><img src="img/bbj2.jpeg" alt="logo2"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn-menu" id="menu-inicio">Início</a></li>
+                    <li><a href="produto.html" class="btn-menu" id="menu-produto">Produtos</a></li>
+                    <li><a href="sobre.html" class="btn-menu" id="menu-sobre">Sobre</a></li>
+                    <li><a href="contato.html"  class="btn-menu" id="menu-contato">Contato</a></li>
+                    <li><button class="cadastro btn" id="cadastrarUsuario">Cadastrar</button></li>
+                    <li class="social"><a href="https://api.whatsapp.com/send/?phone=5531998495847&text&type=phone_number&app_absent=0" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a></li>
+                    <li class="social"><a href="https://www.instagram.com/bebejucas/?img_index=1" target="_blank"><img src="img/instagram.png" alt="Instagram"></a></li>
+                </ul>
+                
+            </nav>
+            
+        </div>
+    </header>
+    <!--Navegação-->
+
+    <!--Popup de cadastro do usuário-->
+
+    <div class="popup-cadastro" id="popup-cadastro">
+        <div class="dadosDoUsuario">
+            <strong>Cadastre-se</strong>
+            <div class="nomeDeCadastroUsuario">
+                <input id="nomeDeCadastroUsuario" type="text" class="nomeDeUsuario" placeholder="Nome de usuário">
+            </div>
+            <div class="telefoneDeCadastroUsuario">
+                <input id="telefoneDeCadastroUsuario" type="tel" maxlength="15" class="telefoneDeUsuario" placeholder="(99) 9999-9999" onkeyup="handlePhone(event)">
+            </div>
+            <div class="emailDeCadastroUsuario">
+                <input id="emailDeCadastroUsuario" type="email" class="emailDeUsuario" placeholder="Email de usuário">
+            </div>
+            <div class="senhaDeCadastroUsuario">
+                <input type="password" id="senhaDeCadastroUsuario" placeholder="Senha de usuário">
+                <span id="icone" onclick="mostrarEsconder()"></span>
+            </div>
+            
+            <button class="salvarUsuario" id="salvarUsuario">Salvar</button>
+            <button class="sair" id="sairDoCadastro">Sair</button>
+        </div>
+    </div>
+    <!--Fim do Popup de cadastro do usuário-->
+
+    <!--Popup de Dados do usuário-->
+    <div class="popup-dadosUsuario" id="popup-dadosUsuario">
+        <div class="dadosDoUsuario1">
+            <strong>Meus Dados</strong>
+            <img class="fotoDoUsuario" id="fotoDoUsuario" src="img/usuario.png">
+            
+          
+            
+            <div class="nomeDeCadastroUsuario1">
+                <p id="nomeDeCadastroUsuario" >Nome do usuario</p>
+            </div>
+            <div class="telefoneDeCadastroUsuario1">
+                <p id="telefoneDeCadastroUsuario" >099123456789</p>
+            </div>
+            <div class="emailDeCadastroUsuario1">
+                <p id="emailDeCadastroUsuario" >email.do.usuario.com</p>
+            </div>
+        
+            <button class="editarDadosUsuario" id="editarDadosUsuario">Editar</button>
+            <button class="sairPopupDadosUsuario" id="sairPopupDadosUsuario">Sair</button>
+        </div>
+    </div>
+    <!--Fim do Popup de dados do usuário-->
+
+    <!--Popup para editar dados do usuário-->
+    <div class="popup-editarDados" id="popup-editarDados">
+        <div class="dadosDoUsuario2">
+            <strong>Editar Dados</strong>
+            <div id="editarDadosImg">
+                <label class="editarImg" for="editarImg__input" tabindex="0"> 
+                    <span class="editarImg__imagem"></span>
+                </label>
+                <input type="file" accept="image/*" id="editarImg__input"/>
+            </div>
+            <div class="editarDadosUsuario">
+                <input id="nomeDeUsuario" type="text" class="nomeDeUsuario" placeholder="Nome de usuário">
+            </div>
+            <div class="editarDadosUsuario">
+                <input id="telefoneDeUsuario" type="tel" maxlength="15" class="telefoneDeUsuario" placeholder="(99) 9999-9999" onkeyup="handlePhone(event)">
+            </div>
+            <div class="editarDadosUsuario">
+                <p id="emailDeUsuario" >email.do.usuario.com</p>
+            </div>
+            <button class="salvarDadosUsuario" id="salvarDadosUsuario">Salvar</button>
+            <button class="voltarDeEditar" id="voltarDeEditar">Voltar</button>
+        </div>
+    </div>
+    <!--Fim do Popup de editar dados do usuário-->
+
+    <section class="banner">
+        <h1>Bem-vindo à Bebejucas </h1>
+        <p>De Mãe para Mães!</p>
+    </section>
+    
+
+    <!--Galeria de fotos-->
+    <section>
+        <div class="novo-container">
+            <div class="faca-mais-texto">
+                <h3>Conheça o nosso catálogo de produtos</h3>
+                <p>Venham se apaixonar pelos looks mais lindos e deixar os Bebejucas e Bebejucas
+                estilosos e com lookinhos bem confortáveis!</p>
+                <a href="produto.html" class="btn2">Confira nossos produtos</a>
+            </div>
+            
+            <!-- Carrossel de fotos -->
+            <div class="slides">
+                <div class="carrossel">
+                    <div class="containerdoSlide" id="img">
+                        <img src="img/1.jpeg" alt="1">
+                        <img src="img/2.jpeg" alt="2">
+                        <img src="img/3.jpeg" alt="3">
+                        <img src="img/4.jpeg" alt="4">
+                        <img src="img/5.jpeg" alt="5">
+                        <img src="img/6.jpeg" alt="6">
+                        <img src="img/7.jpeg" alt="7">
+                        <img src="img/8.jpeg" alt="8">
+                        <img src="img/9.jpeg" alt="9">
+                        <img src="img/13.jpeg" alt="10">
+                    </div>
+                </div>
+            </div>
+            <!-- Carrossel de fotos -->
+        </div>
+    <section>
+
+    <section id="produto-fotos">
+        
+        <h3>Tamanhos do 1-14</h3> 
+        
+        <div class="fotos2">
+            <img src="img/1.jpeg" alt="1">
+            <img src="img/2.jpeg" alt="2">
+            <img src="img/3.jpeg" alt="3">
+            <img src="img/4.jpeg" alt="4">
+        </div>
+        <div class="fotos2">
+            <img src="img/5.jpeg" alt="5">
+            <img src="img/6.jpeg" alt="6">
+            <img src="img/7.jpeg" alt="7">
+            <img src="img/8.jpeg" alt="8">
+        </div>
+
+        <div class="fotos2">
+            <img src="img/9.jpeg" alt="9">
+            <img src="img/13.jpeg" alt="13">
+            <img src="img/14.jpeg" alt="14">
+            <img src="img/15.jpeg" alt="15">
+        </div>
+        <div class="fotos2">
+            <img src="img/16.jpeg" alt="16">
+            <img src="img/17.jpeg" alt="17">
+            <img src="img/18.jpeg" alt="18">
+            <img src="img/19.jpeg" alt="19">
+        </div>
+
+    </section>
+    <!--Fim galeria-->
+
+
+
+    <!--Direcionamento para contato e agendamento-->
+    <section>
+        <div class="novo-container2">
+            <div class="faca-mais-texto">
+                <h3>Agende já seu horário</h3>
+                <p>Venha conhecer nossa loja. Atendimento com hora marcada.</p>
+                <p>Atendemos Itabira e região.</p>
+                <a href="contato.html" class="btn2">Agende seu horário</a>
+            </div>
+
+            <div class="faca-mais-imagem">
+                <img src="img/bb1.jpeg" alt="logo1">
+            </div>
+        </div>
+    </section>
+    <!-- Fim Direcionamento para contato e agendamento-->
+
+    <!--Início footer-->
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2024 Bebejucas Moda Infantil - Todos os direitos reservados.</p>
+        </div>
+        <div class="Voltar-ao-inicio"><a href="index.html">Voltar ao Início</a></div>
+    </footer>
+    <!--Fim footer-->
+    <script>
+        const menuInicio = document.getElementById('menu-inicio')
+
+        var idPagina = window.location.href
+
+        if(idPagina = 'http://127.0.0.1:5501/index.html') {
+            menuInicio.classList.add('selecionado')
+        }
+    </script>
+</body>
+</html>

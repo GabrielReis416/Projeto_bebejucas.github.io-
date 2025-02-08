@@ -1,0 +1,1281 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover{color: rgb(169, 72, 196);
+    text-decoration: none;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position:fixed;
+    z-index: 2;
+}
+
+/* Estilos do cabeçalho */
+
+header {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.3px;
+}
+
+.logo-usuario {   /* estilização da foto do usuário - botão de acesso aos dados de usuário */
+    width: 30px;
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 70px; /* Ajuste conforme o tamanho logo */
+    margin-left: 30px;
+}
+
+nav {
+    float: right;
+    background-color: rgb(240, 237, 237);
+    width: 85%;
+    height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 0px;
+}
+
+nav ul li a {
+    margin-right: 10px;
+    float: left;
+    background-color: rgb(240, 237, 237);
+    padding: 15px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-menu:hover{
+    background-color: aqua;
+}
+
+/* estilização botão de cadastro cadastrarUsuario e cadastrarProduto */
+
+.cadastro {  
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+.cadastro:hover { 
+    color: rgb(169, 72, 196);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(112, 228, 228);
+}
+
+#cadastrarProduto {
+    border: none;
+    padding: 0;
+    background-color: rgb(240, 237, 237);
+}
+/* Fim da estilização botão de cadastro*/
+
+.selecionado {
+    background: aqua; 
+}
+
+.social a {
+    margin-left: 20px;
+    padding: 15px;
+}
+
+.social img {
+    height: 30px; /* Ajuste conforme o tamanho dos ícones das redes sociais */
+}
+
+/* Estilos do banner */
+
+.banner {
+    background-image: url('banner.jpg'); /* Substitua pela imagem do seu banner */
+    background-size: cover;
+    color: #0a0707;
+    text-align: center;
+    padding: 100px 0px;
+    background-color:  #e6d8e5;
+    width: 90%;
+    margin: 5%;
+    margin-top: 150px;
+    border-radius: 1%;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.banner p {
+    font-size: 1.5em;
+    
+}
+/* Estilização do banner na página de Cadastro de produtos*/
+
+.cadastroDeProduto {
+    background-image: url('banner.jpg'); /* Substitua pela imagem do seu banner */
+    background-size: cover;
+    color: #0a0707;
+    text-align: center;
+    padding: 10px 0px;
+    background-color:  #e4c9e2;
+    width: 90%;
+    margin: 5%;
+    margin-top: 150px;
+    border-radius: 1%;
+}
+
+.cadastroDeProduto h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    padding: 5px; 
+}
+
+.cadastroDeProduto p {
+    font-size: 1.5em; 
+    padding: 2px;  
+}
+
+.novo-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+}
+
+.faca-mais-texto{
+    width: 60%;
+    padding: 0 40px;
+}
+
+.faca-mais-texto h3{
+    font-size: 50px;
+}
+
+.faca-mais-texto p{
+    margin: 5px 0 10px 0;
+    padding: 0 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Estilização do carrossel */
+
+.slides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 450px;
+}
+
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 450px;
+    width: 450px;
+    z-index: 1;
+}
+
+.containerdoSlide{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.containerdoSlide img{
+    object-fit: cover;
+    height: 700px;
+    width: 450px;
+}
+
+/*fim da estilização do carrossel */
+
+.faca-mais-imagem img{
+    width: 100%;
+}
+
+
+.faca-mais-imagem img{
+    height: 300px;
+    width: 300x;
+}
+
+.btn{
+    background-color: aqua;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn2{
+    background-color: aqua;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+
+}
+
+.novo-container2{
+    display: flex;
+    text-align: center;
+}
+
+
+.fotos2{
+    display: flex;
+     
+}
+.fotos2 img {
+    flex: 1;
+    margin: 2px;
+    height: 350px;
+    width: 350px;
+}
+
+.sobre-bebejucas h2{
+    font-size: 50px;
+    color: black;
+    margin: 18px 0;
+    padding: 10px ;
+}
+
+.sobre-bebejucas p{
+    font-size: 18px;
+    color: black;
+    margin: 18px 0;
+    padding: 10px ;
+}
+
+.contato h2, h3 {
+    font-size: 30px;
+    color: black;
+    margin: 18px 0;
+    padding: 10px ;
+}
+
+.contato p{
+    font-size: 18px;
+    color: black;
+    margin: 18px 0;
+    padding: 10px ;  
+}
+
+/* Estilos do rodapé */
+
+footer {
+    background-color: #76e5d8;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    position: none;
+    bottom: 0;
+    width: auto;
+}
+
+.container-footer {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Voltar-ao-inicio{
+    margin: 10px 0 10px 0;
+    padding: 0 10px;
+    font-size: 15px;
+    text-align: center; 
+}
+
+/* Estilização do popup de Cadastro de Usuário */
+
+div.dadosDoUsuario{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    margin: 20px 40%;
+    display: flex;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.493);  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fbf7fc;
+    border-radius: 10px; 
+    z-index: 3;
+}
+
+div.dadosDoUsuario input{
+    width: 230px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(17, 17, 17);
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+div.dadosDoUsuario input:focus {
+    border: 2px solidc;
+    border-color:  #2eddc6;
+    outline-style: none;
+}
+
+div.dadosDoUsuario button{
+    background: #23A0FF;
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s; 
+}
+
+.popup-cadastro{
+    display: none;
+}
+
+.popup-cadastro.ativo{
+    display: flex;
+}
+
+#sairDoCadastro {
+    margin-top: 10px;
+    background: #df5c28;
+}
+
+#sairDoCadastro:hover {
+    background: #eb5317;
+}
+
+.esconderDivCadastro{
+    display: none;
+}
+
+div.dadosDoUsuario button:hover{
+    background: #1d85d4;
+}
+
+div.dadosDoUsuario strong{
+    color: #5ca815c5;
+    margin-bottom: 20px;
+    font-size: 20px;
+} 
+
+#icone{
+    position: absolute;
+    right: 30px;
+    margin-top: 20px;
+    transform: translateY(-50%);
+    background: url('./img/mostrar.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#icone.esconder{
+    background: url('./img/esconder.png');
+    background-size: cover;
+}
+
+/* Fim da estilização do popup de Cadastro de Usuário */
+
+/* Estilização do popup de Dados do Usuário */
+
+div.dadosDoUsuario1{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    margin: 20px 40%;
+    display: flex;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.493);  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fbf7fc;
+    border-radius: 10px; 
+    z-index: 3;
+}
+
+#fotoDoUsuario{
+    width: 90px;
+    height: 90px;
+}
+
+div.dadosDoUsuario1 p{
+    width: 230px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(17, 17, 17);
+    font-size: 17px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+div.dadosDoUsuario1 button{
+    background: #23A0FF;
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s; 
+}
+
+.popup-dadosUsuario {
+    display: none;
+}
+
+.popup-dadosUsuario.ativo1 {
+    display: flex;
+}
+
+#editarDadosUsuario {
+    margin-top: 10px;
+}
+
+#sairPopupDadosUsuario {
+    margin-top: 10px;
+    background: #df5c28;
+}
+
+#sairPopupDadosUsuario:hover {
+    background: #eb5317;
+}
+
+div.dadosDoUsuario1 button:hover{
+    background: #1d85d4;
+}
+
+div.dadosDoUsuario1 strong{
+    color: #5ca815c5;
+    margin-bottom: 10px;
+    font-size: 20px;
+} 
+
+/* Fim da estilização do popup de Dados do Usuário */
+
+/* Estilização do popup de editar dados de Usuário */
+
+div.dadosDoUsuario2{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    margin: 20px 40%;
+    display: flex;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.493);  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fbf7fc;
+    border-radius: 10px; 
+    z-index: 3;
+}
+
+#editarDadosImg {
+    width: 90px;
+    height: 90px;
+}
+
+.editarDadosUsuario input{
+    width: 230px;
+    height: 35px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(17, 17, 17);
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+#nomeDeUsuario{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+div.dadosDoUsuario2 p{
+    width: 230px;
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 10px;
+    border: none;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(17, 17, 17);
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+div.dadosDoUsuario2 input:focus {
+    border: 2px solidc;
+    border-color:  #2eddc6;
+    outline-style: none;
+}
+
+div.dadosDoUsuario2 button{
+    background: #23A0FF;
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s; 
+}
+
+.popup-editarDados{
+    display: none;
+}
+
+.popup-editarDados.ativo2{
+    display: flex;
+}
+
+#voltarDeEditar {
+    margin-top: 10px;
+    background: #df5c28;
+}
+
+#voltarDeEditar:hover {
+    background: #eb5317;
+}
+
+.esconderDivCadastro{
+    display: none;
+}
+
+div.dadosDoUsuario2 button:hover{
+    background: #1d85d4;
+}
+
+div.dadosDoUsuario2 strong{
+    color: #5ca815c5;
+    margin-bottom: 10px;
+    font-size: 20px;
+} 
+
+/* Estilização do input de imagem do pupup de editar dados do Usuário*/
+
+#editarImg__input {
+    display: none;
+}
+
+.editarImg {
+    width: 90px;
+    height: 90px;
+    color: #777;
+    background: #eef;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    font-size: 18px;
+    border-radius: 100%;
+}
+
+.editarImg:hover {
+    color: #fff;
+    background: #ccc;
+}
+
+.editarImg:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+}
+
+.editarImg:focus {
+    color: #9c9696;
+    background: #ccc;
+}
+
+.editarImg__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+
+/* Fim da estilização do popup de editar dados de Usuário */
+
+/* Estilização da pagina de produtos */
+
+.bannerProdutos {
+    background-image: url('banner.jpg'); /* Substitua pela imagem do seu banner */
+    background-size: cover;
+    color: #0a0707;
+    text-align: center;
+    padding: 5px 0px;
+    background-color:  #e6d8e5;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 1%;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    font-family: "Arial";
+    gap: 16px;
+    background-image: url();
+    justify-content:space-around;
+}
+
+.card {
+    background-color: #fff;
+    width: 250px;
+    height: 420px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+    margin: 8px 0;
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 40%;
+}
+
+.card h1 {
+    margin: 2px;
+    font-size: 1rem;
+}
+
+.card h2 {
+    margin: 1px;
+    font-size: 0.9rem;
+    color: #aaaa;
+    height: 60px;
+}
+
+.card button {
+    background-color: #58c5b8;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color: #0083fd;
+    transition: 500ms;
+    cursor: pointer;
+    color: #fff;
+}
+
+.estiloFinal {
+    margin-top: 1%;
+}
+
+/*Estilização para telas com largura máxima de 500 px*/
+
+@media screen and (max-width:500px) {
+
+    #produtos {
+        gap: 5px;
+        width: 98%;
+        padding: 1%;
+    }
+
+    .bannerProdutos{
+        margin-top: 200px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 180px;
+        height: 420px;
+        margin: 2px 0;
+    }
+
+    footer {
+        background-color: #76e5d8;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        position: none;
+        bottom: 0;
+        width: auto;
+    }
+}
+
+/* Fim da Estilização da pagina de produtos */
+
+/* Estilização da pagina de Cadastro de  produtos */
+
+
+.cardCadastroProduto {
+    background-color: #fff;
+    width: 250px;
+    height: 420px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+    margin: 8px 0;
+}
+
+#produtosImg {
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.cadastroProduto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 25%;
+}
+
+.seletores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 96%;
+    padding: 0 2%;
+    height: 38px;
+}
+
+.cardCadastroProduto h1 {
+    margin: 2px;
+    font-size: 15px;
+}
+
+.cardCadastroProduto h2 {
+    margin: 1px;
+    font-size: 14px;
+    color: #143a37aa;
+    height: 50px;
+}
+
+#botaoSeletor {
+    background-color: #58c5b8;
+    height: 30px;
+    border: none;
+    width: 70%;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+#botaoEditar {
+    background-color: white;
+    height: 38px;
+    border: none;
+    width: 40px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+.seletores img {
+    display: flex;
+    align-items: center;
+    width: 33px;
+    height: 30px;
+    padding-left: 3px;
+    padding-bottom: 1px;
+}
+
+#botaoSeletor:hover {
+    background-color: #0083fd;
+    transition: 500ms;
+    cursor: pointer;
+    color: #fff;
+}
+
+#botaoEditar:hover {
+    background-color: #fff;
+    border-radius: 100%;
+    transition: 500ms;
+    cursor: pointer;
+    color: #fff;
+}
+
+#botaoEditar:active {
+    background-color: #fd1100;
+}
+
+/*Estilização para telas com largura máxima de 500 px*/
+
+@media screen and (max-width: 900px) {
+    .popupCadastroProduto {
+        top: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cardCadastroProduto {
+        width: 180px;
+        height: 420px;
+    }
+
+    .cardCadastroProduto {
+        width: 180px;
+        height: 420px;
+        margin: 2px 0;
+    }
+
+}
+
+/* Estilização do popup de cadastro de Produtos*/
+
+.popupCadastroProduto.ativo {
+    display: block;
+}
+
+.popupCadastroProduto {
+    display: none;
+}
+
+.cardCadastroPopup {
+    position: fixed;
+    top: 80px;
+    right: 30%;
+    background-color: #fff;
+    width: 350px;
+    height: 520px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+    margin: 8px 0;
+    z-index: 3;
+}
+
+#cadastroPopupImg {
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.cadastroProdutoPopup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 27%;
+}
+
+.seletoresPopup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    padding: 0 1%;
+    height: 38px;
+}
+
+.seletoresPopup img {
+    display: flex;
+    align-items: center;
+    width: 33px;
+    height: 30px;
+    padding-left: 3px;
+    padding-bottom: 1px;
+}
+
+#tituloProduto {
+    margin: 2px;
+    font-size: 1rem;
+    width: 320px;
+    height: 25px;
+    border: solid 1px rgba(134, 134, 134, 0.616);
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(134, 134, 134, 0.616);
+    outline: none;
+}
+
+#descricaoProduto {
+    resize: none;
+    margin: 1px;
+    font-size: 0.9rem;
+    width: 320px;
+    height: 60px;
+    border: solid 1px rgba(134, 134, 134, 0.616);
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(134, 134, 134, 0.616);
+    outline: none;
+}
+
+#precoProduto {
+    height: 20px;
+    border: solid 1px rgba(134, 134, 134, 0.616);
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(134, 134, 134, 0.616);
+    outline: none;
+}
+
+#botaoSalvarProduto {
+    background-color: #58c5b8;
+    height: 30px;
+    border: none;
+    width: 70%;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+#botaoExcluirProduto {
+    background-color: white;
+    height: 38px;
+    border: none;
+    width: 40px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+#botaoFecharProduto {
+    background-color: white;
+    height: 40px;
+    border: none;
+    width: 40px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+#botaoSalvarProduto:hover {
+    background-color: #0083fd;
+    transition: 500ms;
+    cursor: pointer;
+    color: #fff;
+}
+
+#botaoExcluirProduto:hover {
+    background-color: #fff;
+    border-radius: 100%;
+    transition: 500ms;
+    cursor: pointer;
+    color: #fff;
+}
+
+#botaoFecharProduto:hover {
+    background-color: #fff;
+    border-radius: 100%;
+    transition: 500ms;
+    cursor: pointer;
+    color: #fff;
+}
+
+#botaoExcluirProduto:active {
+    background-color: #0083fd;
+}
+
+#botaoFecharProduto:active {
+    background-color: #f03333;
+}
+
+/* Estilização do input de imagens do pupup de cadastro de Produtos*/
+
+#picture__input {
+    display: none;
+}
+
+.picture {
+    width: 350px;
+    height: 340px;
+    color: #777;
+    background: #eef;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-size: 18px;
+}
+
+.picture:hover {
+    color: #fff;
+    background: #ccc;
+}
+
+.picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+}
+
+.picture:focus {
+    color: #9c9696;
+    background: #ccc;
+}
+
+.picture__img {
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Fim da estilização do input de imagens do pupup de cadastro de Produtos*/
+
+/* Fim da estilização do popup de cadastro de Produtos*/
+
+/* Fim da estilização da pagina de Cadastro de produtos */
+
+
+
+/*Estilização para telas com largura máxima de 900 px*/
+
+@media screen and (max-width:900px) {
+    nav {
+        width: 70%;
+        margin: 0;
+        height: 80px;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        padding-inline-start: 5px;
+    }
+
+    nav ul li a {
+        padding: 10px 10px;
+        margin-right: 2px;
+    }
+
+    .social a {
+        margin-left: 0px;
+        padding: 5px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+    
+    .banner{
+        padding: 10px 0px;
+        background-color:  #e4c9e2;
+        width: 90%;
+        margin-top: 110px;
+        border-radius: 1%;
+    }
+
+    .bannerProdutos {
+        width: 96%;
+    }
+
+    .cadastro {
+        padding: 12px 12px;
+    }
+
+    .cadastroDeProduto{
+        margin-top: 265px;
+    }
+
+    .novo-container{
+        display: inline;
+        margin: 2%;
+        width: 90%;
+        background-color: white; 
+    }
+    
+    .faca-mais-texto{
+        float:initial;
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    #produto-fotos {
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;       
+        padding: 3%;  
+    }
+
+    .fotos2 {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+    
+    .novo-container2{
+        margin-bottom: 15px;
+    }
+
+    .faca-mais-imagem img {
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    div.dadosDoUsuario {
+        margin: 0 35%;
+    }
+
+    div.dadosDoUsuario1 {
+        margin: 0 35%;
+    }
+
+    div.dadosDoUsuario2 {
+        margin: 0 35%;
+    }
+}   
+
+
+/*Estilização para telas com largura máxima de 500 px*/
+
+@media screen and (max-width:500px) {
+    nav {
+        width: 96%;
+        margin: 2%;
+    }
+
+    nav ul li a{
+        padding: 10px 6px;
+        margin-left: 1px;
+    }
+
+    .cadastro {
+        position: fixed;
+        top: 10px;
+        left: 70%;
+    }
+
+    .btn {
+        margin-top: 8px;
+    }
+
+    #cadastrarNovoProduto {
+        margin-right: 10px;
+    }
+
+    .banner {
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 180px;
+    }
+
+    .novo-container {
+        flex-direction: column;
+    }
+
+    div.dadosDoUsuario {
+        margin: 85px 15%;
+    }
+
+    div.dadosDoUsuario1 {
+        margin: 85px 15%;
+    }
+
+    div.dadosDoUsuario2 {
+        margin: 85px 15%;
+    }
+
+    .carrossel{
+        height: 380px;
+        width: 380px;
+    }
+    
+    .containerdoSlide img{
+        width: 380px;
+    }
+
+    .cardCadastroPopup {
+        right: 30px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Bebejucas | Moda Infantil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Navegação-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/bbj2.jpeg" alt="logo2"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn-menu" id="menu-inicio">Início</a></li>
+                    <li><a href="produto.html" class="btn-menu" id="menu-produto">Produtos</a></li>
+                    <li><a href="sobre.html" class="btn-menu" id="menu-sobre">Sobre</a></li>
+                    <li><a href="contato.html" class="btn-menu" id="menu-contato">Contato</a></li>
+                    <li class="social"><a href="https://api.whatsapp.com/send/?phone=5531998495847&text&type=phone_number&app_absent=0" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a></li>
+                    <li class="social"><a href="https://www.instagram.com/bebejucas/?img_index=1" target="_blank"><img src="img/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+    <!--Fim Navegação-->
+
+    <section class="banner">
+        <h1>Contato</h1>
+        <p>Para conhecer nossos produtos, entre em contato conosco e agende seu horário.</p>
+    </section>
+    
+    <!--Inicio Contato da loja-->
+    <section class="contato">
+        <h2>Para mais informações, entre em contato conosco:</h2>
+        <h3>WhatsApp</h3>
+        <p>
+            Whatsapp: (31) 99849-5847 <a href="https://api.whatsapp.com/send/?phone=5531998495847&text&type=phone_number&app_absent=0" target="_blank">ou Clique aqui!</a>
+        </p>
+        <h3>Instagram</h3>
+        <p>
+            Instagram: <a href="https://www.instagram.com/bebejucas/?img_index=1" target="_blank">bebejucas</a>
+        </p>
+        <h3>Visite nossa Loja</h3>
+        <p>Rua dos Locutores - 78, Gabiroba - Itabira/MG.</p>
+    
+    </section>
+    <!--Fim contato da loja-->
+
+    <!--Início footer-->
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2024 Bebejucas Moda Infantil - Todos os direitos reservados.</p>
+        </div>
+        <div class="Voltar-ao-inicio"><a href="contato.html">Voltar ao Início</a></div>
+    </footer>
+    <!--Fim footer-->
+    <script>
+        const menuContato = document.getElementById('menu-contato')
+    
+        var idPagina = window.location.href
+    
+        if(idPagina = 'http://127.0.0.1:5501/contato.html') {
+            menuContato.classList.add('selecionado')
+        }
+    </script>
+</body>
+</html>

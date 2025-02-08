@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="cadastroDeProduto.js" defer ></script>
+</head>
+
+<body>
+    <!--Navegação-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/bbj2.jpeg" alt="logo2"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn-menu" id="menu-inicio">Início</a></li>
+                    <li><a href="produto.html" class="btn-menu" id="menu-produto">Produtos</a></li>
+                    <li><a href="sobre.html" class="btn-menu" id="menu-sobre">Sobre</a></li>
+                    <li><a href="contato.html" class="btn-menu" id="menu-contato">Contato</a></li> 
+                    <li><button class="cadastro btn" id="cadastrarNovoProduto">Novo Produto</button></li>
+                    <li class="social"><a href="https://api.whatsapp.com/send/?phone=5531998495847&text&type=phone_number&app_absent=0" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a></li>
+                    <li class="social"><a href="https://www.instagram.com/bebejucas/?img_index=1" target="_blank"><img src="img/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Fim Navegação-->
+
+    <section class="bannerProdutos">
+        <h1>Nossos Produtos</h1>
+        <p>Confira nossa seleção de produtos para deixar os Bebejucas e Bebejucas estilosos
+             e com lookinhos bem confortáveis. Venha e agende já seu horário.</p>
+        <a href="contato.html" class="btn">Entre em Contato</a>
+    </section>
+
+    <!--Popup de cadastro de produtos-->
+
+    <section id="produtos">
+        <div class="popupCadastroProduto" id="popupCadastroProduto">
+            <div class="cardCadastroPopup">
+                <div id="cadastroPopupImg">
+                    <label class="picture" for="picture__input" tabindex="0"> 
+                        <span class="picture__image"></span>
+                    </label>
+                
+                    <input type="file" accept="image/*" id="picture__input"/>
+                </div>
+                <div class="cadastroProdutoPopup">
+                    <input placeholder="Título do Produto" maxlength="45" id="tituloProduto">
+                    <textarea placeholder="Descrição do Produto" maxlength="70" id="descricaoProduto"></textarea>
+                    <input placeholder="Preço" id="precoProduto">
+                </div>
+                <div class="seletoresPopup">
+                    <button id="botaoSalvarProduto">SALVAR</button>
+                    <button id="botaoExcluirProduto"><img src="img/excluir.png"></button> 
+                    <button id="botaoFecharProduto"><img src="img/fechar.png"></button>    
+                </div>    
+            </div>
+        </div>
+        <!--Fim do Popup de cadastro de produtos-->
+
+        <!--Galeria de produtos-->
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/2.jpeg">
+            <div class="cadastroProduto">
+                <h1 id="tituloDoProduto">Título Atual do produto  jllll123456789012345</h1>
+                <h2 id="descricaoDoProduto">Descrição detalhada do produto ocupando espaço especifico</h2>
+                <span id="precoDoProduto">R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>   
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/3.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>    
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/4.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>   
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/5.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>    
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/6.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>   
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/7.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>    
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/8.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>   
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/9.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>    
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/13.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>   
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/14.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>    
+        </div>
+
+        <div class="cardCadastroProduto">
+            <img id="produtosImg" src="img/15.jpeg">
+            <div class="cadastroProduto">
+                <h1>Título do produto</h1>
+                <h2>Descrição detalhada do produto ocupando espaço</h2>
+                <span>R$ 5,90</span>
+            </div>
+            <div class="seletores">
+                <button id="botaoSeletor">Clique aqui</button>
+                <button id="botaoEditar"><img src="img/editar2.png"></button>     
+            </div>   
+        </div>
+    </section>
+
+    <!--Fim galeria de produtos-->
+    
+    <section class="estiloFinal">
+        <div class="novo-container2">
+            <div class="faca-mais-texto">
+                <h3>Agende já seu horário</h3>
+                <p>Venha conhecer nossa loja. Atendimento com hora marcada.</p>
+                <p>Atendemos Itabira e região.</p>
+                <a href="contato.html" class="btn2">Agende seu horário</a>
+            </div>
+
+            <div class="faca-mais-imagem">
+                <img src="img/bb1.jpeg" alt="logo1">
+            </div>
+    </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2024 Bebejucas Moda Infantil - Todos os direitos reservados.</p>
+        </div>
+        <div class="Voltar-ao-inicio"><a href="produto.html">Voltar ao Início</a></div>
+    </footer>
+    <!--Footer-->
+</body>
+
+</html>
